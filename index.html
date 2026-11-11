@@ -41,6 +41,8 @@ h1 em{font-style:normal;color:var(--brand)}
 .lead{font-size:20px;color:var(--muted);margin:0 0 28px}
 .btn{display:inline-flex;align-items:center;gap:10px;background:var(--brand);color:var(--brand-ink);font-weight:700;font-size:18px;padding:14px 26px;border-radius:12px;text-decoration:none;transition:transform .15s}
 .btn:hover{transform:translateY(-2px)}
+.btn.alt{background:transparent;color:var(--ink);border:2px solid var(--line);margin-inline-start:8px}
+.hero .btn{margin-bottom:8px}
 .btn svg{width:20px;height:20px}
 .fine{color:var(--muted);font-size:14px;margin-top:12px}
 /* demo */
@@ -98,14 +100,19 @@ footer a{color:var(--muted)}
 
   <div class="hero">
     <div>
-      <span class="badge">גרסת בטא · חינם ל-14 יום</span>
+      <span class="badge">גרסת בטא · חינם ל-60 יום</span>
       <h1>הקלדת בשפה הלא נכונה? <em>זה נגמר.</em></h1>
       <p class="lead">TypeSaver משמיע צליל כבר בתו הראשון ומגלה לך באיזו שפה אתה כותב. ואם בכל זאת יצא גיבריש, לחיצה כפולה על Shift מתקנת אותו.</p>
       <a class="btn" href="https://github.com/guyroeicom-tech/typesaver/releases/latest/download/TypeSaver_beta.zip" id="download">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
         הורדה ל-Windows
       </a>
-      <p class="fine">Windows 10/11 · 16MB · ללא התקנה · לא מתחבר לאינטרנט</p>
+      <a class="btn alt" href="https://github.com/guyroeicom-tech/typesaver/releases/latest/download/TypeSaver_mac_arm64.zip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
+        הורדה ל-Mac
+      </a>
+      <p class="fine">Windows 10/11 · macOS 12 ומעלה · לא מתחבר לאינטרנט<br>
+        Mac ישן עם מעבד Intel? <a href="https://github.com/guyroeicom-tech/typesaver/releases/latest/download/TypeSaver_mac_x86_64.zip">הורדה לגרסת Intel</a></p>
     </div>
 
     <div class="demo" aria-hidden="true">
@@ -166,10 +173,17 @@ footer a{color:var(--muted)}
   <div class="wrap">
     <h2>התקנה בדקה</h2>
     <p class="sub">אין אשף התקנה. מורידים, מחלצים, לוחצים.</p>
+    <h3>Windows</h3>
     <ol class="steps">
       <li><div><b>מורידים ומחלצים</b><span>מחלצים את TypeSaver.exe מה-ZIP לתיקייה כלשהי, למשל Documents.</span></div></li>
       <li><div><b>לוחצים פעמיים</b><span>אם Windows מציג "Windows protected your PC", לוחצים "More info" ואז "Run anyway". זה קורה כי זו גרסת בטא שעדיין לא חתומה דיגיטלית.</span></div></li>
       <li><div><b>מקלידים</b><span>אייקון ירוק עם T יופיע ליד השעון. לחיצה עליו מפעילה ומכבה, וקליק ימני פותח הגדרות.</span></div></li>
+    </ol>
+    <h3 style="margin-top:32px">Mac</h3>
+    <ol class="steps">
+      <li><div><b>מורידים ומעבירים ל-Applications</b><span>פותחים את ה-ZIP וגוררים את TypeSaver לתיקיית Applications (יישומים).</span></div></li>
+      <li><div><b>פותחים בפעם הראשונה</b><span>לוחצים פעמיים. אם מופיע "Apple could not verify…", פותחים את הגדרות המערכת ← פרטיות ואבטחה, גוללים למטה ולוחצים "Open Anyway" (לפתוח בכל זאת).</span></div></li>
+      <li><div><b>מאשרים שתי הרשאות</b><span>הגדרות המערכת ← פרטיות ואבטחה: מפעילים את TypeSaver ב"ניטור קלט" וב"נגישות", ואז סוגרים ופותחים את TypeSaver מחדש. בלי ההרשאות האלה Mac לא מאפשר לשמוע את המקלדת.</span></div></li>
     </ol>
   </div>
 </section>
@@ -181,15 +195,15 @@ footer a{color:var(--muted)}
     <details><summary>איך מתקנים טקסט ישן?</summary><p>מסמנים אותו עם העכבר ולוחצים פעמיים מהר על Shift.</p></details>
     <details><summary>יש לי יותר משתי שפות. מה קורה?</summary><p>כל לחיצה כפולה על Shift עוברת לשפה הבאה ברשימה, עד שמגיעים לנכונה.</p></details>
     <details><summary>איפה זה לא עובד?</summary><p>התיקון לא פועל בתוכנות שרצות כמנהל מערכת. בתוכנות שמשלימות טקסט אוטומטית (כמו סגירת סוגריים בעורכי קוד) כדאי לבדוק את התוצאה, ואפשר תמיד לבטל ב-Ctrl+Z.</p></details>
-    <details><summary>מה קורה אחרי 14 יום?</summary><p>בגרסת הבטא התוכנה מפסיקה לפעול אחרי 14 יום. אם היא עזרה לך, נשמח לשמוע! בקרוב אפשר יהיה לרכוש רישיון.</p></details>
-    <details><summary>איך מסירים?</summary><p>קליק ימני על האייקון ← יציאה, ומוחקים את TypeSaver.exe.</p></details>
+    <details><summary>מה קורה אחרי 60 יום?</summary><p>בגרסת הבטא התוכנה מפסיקה לפעול אחרי 60 יום. אם היא עזרה לך, נשמח לשמוע! בקרוב אפשר יהיה לרכוש רישיון.</p></details>
+    <details><summary>איך מסירים?</summary><p>Windows: קליק ימני על האייקון ← יציאה, ומוחקים את TypeSaver.exe. Mac: לוחצים על האייקון בשורת התפריטים ← יציאה, ומעבירים את TypeSaver מ-Applications לפח.</p></details>
   </div>
 </section>
 
 <section class="cta">
   <div class="wrap">
     <h2>תפסיק לכתוב <span dir="ltr">akuo</span>.</h2>
-    <p class="sub">הורדה חינם, 14 יום ניסיון.</p>
+    <p class="sub">הורדה חינם, 60 יום ניסיון. ל-Windows ול-Mac.</p>
     <a class="btn" href="https://github.com/guyroeicom-tech/typesaver/releases/latest/download/TypeSaver_beta.zip">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 21h16"/></svg>
       הורדה ל-Windows

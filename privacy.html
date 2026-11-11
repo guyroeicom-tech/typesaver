@@ -56,6 +56,7 @@ code{direction:ltr;unicode-bidi:embed;background:var(--surface);border:1px solid
 <tr><td>תאריך ההפעלה הראשונה</td><td>אותו קובץ, וגם <code>HKEY_CURRENT_USER\Software\TypeSaver</code></td><td>לחישוב תקופת הניסיון</td></tr>
 <tr><td>הקלטות של שמות השפות</td><td><code>%APPDATA%\TypeSaver\voices</code></td><td>נוצרות במחשב שלך עם הקולות של Windows</td></tr>
 </table></div>
+<p><b>ב-Mac</b> אותם פרטים נשמרים ב-<code>~/Library/Application Support/TypeSaver</code>, ותאריך ההפעלה הראשונה נשמר גם בהעדפות המערכת (<code>com.typesaver.app</code>). ב-Mac התוכנה מבקשת את ההרשאות "ניטור קלט" (כדי לזהות את שפת ההקלדה) ו"נגישות" (כדי לתקן גיבריש). אפשר לבטל אותן בכל רגע בהגדרות המערכת ← פרטיות ואבטחה.</p>
 
 <h2>4. רכישה</h2>
 <p>כשתרכוש רישיון, פרטי התשלום יעובדו ע"י ספק התשלומים לפי מדיניות הפרטיות שלו. <b>אנחנו לא מקבלים ולא שומרים את פרטי כרטיס האשראי שלך.</b> נקבל את השם וכתובת המייל שלך כדי לשלוח את מפתח הרישיון ולתת תמיכה, ולא נמכור ולא נעביר אותם לאף גורם, אלא אם החוק מחייב זאת.</p>
@@ -64,7 +65,7 @@ code{direction:ltr;unicode-bidi:embed;background:var(--surface);border:1px solid
 <p>התוכנה <b>לא שולחת שום מידע</b> לאינטרנט, לא מכילה פרסומות, לא מכילה כלי מעקב או אנליטיקס ולא בודקת עדכונים. אם נוסיף אי פעם תכונה מקוונת, נעדכן את המדיניות לפני כן ונבקש את הסכמתך.</p>
 
 <h2>6. מחיקת המידע</h2>
-<p>סגור את TypeSaver (קליק ימני על האייקון ← יציאה), ומחק את התיקייה <code>%APPDATA%\TypeSaver</code> ואת המפתח <code>HKEY_CURRENT_USER\Software\TypeSaver</code> ברישום.</p>
+<p>סגור את TypeSaver (תפריט האייקון ← יציאה). ב-Windows מחק את התיקייה <code>%APPDATA%\TypeSaver</code> ואת המפתח <code>HKEY_CURRENT_USER\Software\TypeSaver</code> ברישום. ב-Mac מחק את התיקייה <code>~/Library/Application Support/TypeSaver</code> והרץ בטרמינל <code>defaults delete com.typesaver.app</code>.</p>
 
 <h2>7. שינויים במדיניות</h2>
 <p>אם המדיניות תשתנה, נפרסם כאן את הגרסה החדשה ונעדכן את התאריך.</p>
