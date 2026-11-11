@@ -57,7 +57,7 @@ kbd.down{transform:translateY(2px);background:#10b981;color:#00422b}
     </h1>
     <p class="text-lg md:text-xl text-primary-fixed-dim/90 mb-4 max-w-2xl font-medium">כי הזמן שלך שווה יותר מלתקן גיבריש</p>
     <p class="text-base text-on-surface-variant max-w-3xl leading-relaxed mb-10">
-      TypeSaver משמיע צליל עדין כבר בתו הראשון ומגלה לך באיזו שפה אתה מקליד, עוד לפני שנכתבה מילה שלמה. ואם בכל זאת יצא גיבריש, לחיצה כפולה על
+      TypeSaver מגלה לך באיזו שפה אתה מקליד, בצליל או בקול, ברגע שמחליפים שפה וכבר בתו הראשון, עוד לפני שנכתבה מילה שלמה. בזמן הקלדה רגילה הוא שקט. ואם בכל זאת יצא גיבריש, לחיצה כפולה על
       <kbd class="px-2 py-0.5 rounded bg-surface-container-highest text-primary font-mono text-xs font-semibold">Shift</kbd>
       מתקנת אותו ומעבירה את המקלדת לשפה הנכונה. בלי ענן ובלי איסוף נתונים.
     </p>
@@ -155,8 +155,8 @@ kbd.down{transform:translateY(2px);background:#10b981;color:#00422b}
       <div class="bg-surface-container rounded-2xl p-8 flex flex-col justify-between group hover:bg-surface-container-high transition-colors">
         <div>
           <div class="w-12 h-12 rounded-xl bg-surface-container-low text-primary flex items-center justify-center mb-6"><span class="material-symbols-outlined text-2xl">notifications_active</span></div>
-          <h3 class="text-xl font-bold mb-3">צליל בתו הראשון</h3>
-          <p class="text-sm text-on-surface-variant leading-relaxed mb-6">צליל שונה לכל שפה, או קול שאומר "עברית" / "English". שומעים באיזו שפה המקלדת עוד לפני שנכתבה מילה שלמה.</p>
+          <h3 class="text-xl font-bold mb-3">התראה בהחלפת שפה</h3>
+          <p class="text-sm text-on-surface-variant leading-relaxed mb-6">ברגע שמחליפים שפה, או בתו הראשון אחרי דקה של שקט: אנגלית = שני צפצופים, עברית וכל שפה אחרת = צפצוף אחד. או קול שאומר "עברית" / "English". בזמן הקלדה רגילה הוא לא מפריע.</p>
         </div>
         <div class="p-3.5 rounded-xl bg-surface-container-lowest flex items-center justify-between text-[11px] font-semibold text-on-surface-variant"><span>צפצוף או קול, לבחירתך</span><span class="text-primary">אפשר להשתיק</span></div>
       </div>
@@ -229,14 +229,14 @@ kbd.down{transform:translateY(2px);background:#10b981;color:#00422b}
   <div class="max-w-6xl mx-auto">
     <span class="text-xs font-semibold text-primary tracking-wider block mb-2">בלי אשף התקנה</span>
     <h2 class="text-3xl font-bold mb-3">התקנה בדקה, ויושב בשקט ליד השעון</h2>
-    <p class="text-on-surface-variant mb-10 max-w-2xl">בלי חלונות קופצים ובלי תוכנות נלוות. אייקון ה-T הירוק יושב ליד השעון ב-Windows, או בשורת התפריטים ב-Mac. במנוחה הוא לא צורך מעבד בכלל.</p>
+    <p class="text-on-surface-variant mb-10 max-w-2xl">בלי חלונות קופצים ובלי תוכנות נלוות. האייקון יושב ליד השעון ב-Windows, או בשורת התפריטים ב-Mac, ומראה כל הזמן את השפה הנוכחית: <b class="text-on-surface">עב</b> או <b class="text-on-surface">EN</b>. במנוחה הוא לא צורך מעבד בכלל.</p>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <div class="bg-surface-container-low rounded-2xl p-6">
         <h3 class="text-lg font-bold mb-4 flex items-center gap-2"><svg class="w-5 h-5 fill-current text-primary" viewBox="0 0 24 24"><path d="M3 5.48L10.53 4.45V11.23H3V5.48ZM3 18.52L10.53 19.55V12.77H3V18.52ZM11.77 4.28L21 3V11.23H11.77V4.28ZM11.77 19.72L21 21V12.77H11.77V19.72Z"/></svg>Windows</h3>
         <ol class="space-y-3">
           <li class="flex items-start gap-3 p-4 rounded-xl bg-surface-container"><span class="w-7 h-7 rounded-lg bg-primary-container text-on-primary-container flex items-center justify-center font-bold text-sm shrink-0">1</span><div><b>מורידים ומחלצים</b><p class="text-sm text-on-surface-variant">מחלצים את TypeSaver.exe מה-ZIP לתיקייה כלשהי. לא צריך הרשאות מנהל.</p></div></li>
           <li class="flex items-start gap-3 p-4 rounded-xl bg-surface-container"><span class="w-7 h-7 rounded-lg bg-surface-container-high text-primary flex items-center justify-center font-bold text-sm shrink-0">2</span><div><b>לוחצים פעמיים</b><p class="text-sm text-on-surface-variant">אם מופיע "Windows protected your PC": לוחצים "More info" ואז "Run anyway". זו גרסת בטא שעדיין לא חתומה דיגיטלית.</p></div></li>
-          <li class="flex items-start gap-3 p-4 rounded-xl bg-surface-container"><span class="w-7 h-7 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center font-bold text-sm shrink-0">3</span><div><b>מקלידים</b><p class="text-sm text-on-surface-variant">אייקון T ירוק מופיע ליד השעון. קליק ימני: צפצוף או קול, תיקון גיבריש, יציאה.</p></div></li>
+          <li class="flex items-start gap-3 p-4 rounded-xl bg-surface-container"><span class="w-7 h-7 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center font-bold text-sm shrink-0">3</span><div><b>מקלידים</b><p class="text-sm text-on-surface-variant">אייקון השפה (עב / EN) מופיע ליד השעון. אם הוא מוסתר מאחורי החץ ^, גוררים אותו לשורת המשימות כדי שיהיה תמיד גלוי. קליק ימני: צפצוף או קול, תיקון גיבריש, התראה חזותית, יציאה.</p></div></li>
         </ol>
       </div>
       <div class="bg-surface-container-low rounded-2xl p-6">
@@ -285,6 +285,7 @@ kbd.down{transform:translateY(2px);background:#10b981;color:#00422b}
   <div class="max-w-4xl mx-auto">
     <h2 class="text-3xl font-bold text-center mb-12">שאלות נפוצות</h2>
     <div class="space-y-4">
+      <details class="bg-surface-container rounded-xl group"><summary class="cursor-pointer p-5 font-semibold flex items-center justify-between list-none hover:text-primary">מתי בדיוק נשמעת ההתראה?<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span></summary><div class="px-5 pb-5 text-sm text-on-surface-variant leading-relaxed">בשני מצבים: (1) ברגע שהשפה מתחלפת, ב-Alt+Shift, במעבר לחלון שבו השפה שונה או אחרי תיקון גיבריש. (2) בתו הראשון אחרי דקה שלא הקלדת, כתזכורת. בזמן הקלדה רגילה, גם עם הפסקות קצרות, TypeSaver שקט. אנגלית = שני צפצופים, עברית וכל שפה אחרת = צפצוף אחד. אפשר לבחור במקומם קול שאומר את שם השפה, ולחרשים יש התראה חזותית.</div></details>
       <details class="bg-surface-container rounded-xl group"><summary class="cursor-pointer p-5 font-semibold flex items-center justify-between list-none hover:text-primary">איך בדיוק עובד התיקון בלחיצה כפולה על Shift?<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span></summary><div class="px-5 pb-5 text-sm text-on-surface-variant leading-relaxed">אם הקלדת באנגלית כשהתכוונת לעברית (למשל "akuo"), לחיצה כפולה ומהירה על Shift מוחקת את מה שהקלדת מאז ההפסקה האחרונה, מקלידה אותו בשפה הנכונה ("שלום") ומעבירה את המקלדת לעברית. לטקסט ישן: מסמנים אותו ולוחצים פעמיים על Shift. עם יותר משתי שפות, כל לחיצה כפולה עוברת לשפה הבאה.</div></details>
       <details class="bg-surface-container rounded-xl group"><summary class="cursor-pointer p-5 font-semibold flex items-center justify-between list-none hover:text-primary">האם התוכנה שומרת סיסמאות או הודעות שאני מקליד?<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span></summary><div class="px-5 pb-5 text-sm text-on-surface-variant leading-relaxed">לא. TypeSaver לא שומרת היסטוריית הקלדות, לא כותבת אותן לדיסק ולא מתחברת לאינטרנט. בזיכרון נשמרות רק ההקשות מאז ההפסקה האחרונה, כדי שאפשר יהיה לתקן אותן, והן נמחקות אחרי דקה בלי הקלדה, במעבר חלון, בלחיצת עכבר או ב-Enter.</div></details>
       <details class="bg-surface-container rounded-xl group"><summary class="cursor-pointer p-5 font-semibold flex items-center justify-between list-none hover:text-primary">האנטי-וירוס או Windows מזהירים. זה בטוח?<span class="material-symbols-outlined text-on-surface-variant group-open:rotate-180 transition-transform">expand_more</span></summary><div class="px-5 pb-5 text-sm text-on-surface-variant leading-relaxed">התוכנה קוראת את המקלדת כדי לזהות את השפה, ולכן מערכות אבטחה עלולות לחשוד בה. גרסת הבטא עדיין לא חתומה דיגיטלית, ולכן Windows ו-Mac מציגים אזהרה בפתיחה הראשונה. בגרסה הסופית התוכנה תהיה חתומה.</div></details>
